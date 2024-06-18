@@ -1,3 +1,4 @@
+import FormSearchDynamic from '@/components/organisms/FormSearchDynamic';
 import Image from 'next/image';
 import Reacr, { FC } from 'react';
 
@@ -35,7 +36,7 @@ const ExploreDataContainer: FC<ExploreDataContainerProps> = () => {
           </div>
         </div>
         <div>
-          <div>Form Search</div>
+          <FormSearchDynamic />
         </div>
       </div>
       <div className='mt-20 mb-16 px-32 flex flex-row items-start gap-10'>
