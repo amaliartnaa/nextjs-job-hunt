@@ -15,7 +15,13 @@ const FormFilterDynamic: FC<FormFilterDynamicProps> = ({ filterForms, formFilter
     <Form {...formFilter}>
       <form onSubmit={formFilter.handleSubmit(onSubmitFilter)}>
         {filterForms.map((item: filterFormType, i: number) => (
-          <CheckboxForms key={i} formFilter={formFilter} items={item.items} name={item.name} label={item.label} />
+          <CheckboxForms 
+            key={i} 
+            formFilter={formFilter} 
+            items={item.items}
+            name={item.name}
+            label={item.label}
+          />
         ))}
 
         <Button className='mt-5 w-full'>Apply Filter</Button>
