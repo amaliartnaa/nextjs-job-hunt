@@ -1,3 +1,5 @@
+'use client'
+
 import ExploreDataContainer from '@/containers/ExploreDataContainer'
 import { formFilterSchema } from '@/lib/form-schema'
 import React from 'react'
